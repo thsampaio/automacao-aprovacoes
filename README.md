@@ -12,9 +12,13 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-Baixe um modelo GGUF pequeno (ex: `Qwen2.5-3B-Instruct-Q4_K_M.gguf`,
-~2GB) do Hugging Face e salve em `modelos/modelo.gguf`. A partir dai a
-inferencia roda 100% offline.
+Baixe o modelo (Qwen2.5-3B-Instruct, ~2GB, bom suporte a portugues):
+
+```bash
+python src/baixar_modelo.py
+```
+
+A partir dai a inferencia roda 100% offline.
 
 ## Mapear um sistema novo
 
